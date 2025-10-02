@@ -26,15 +26,9 @@ Trabalhamos em diversos projetos voltados para servir o povo de Deus, incluindo:
 - Ferramentas de pesquisa e análise de textos bíblicos
 - Integração com recursos teológicos e comentários
 
-### 🛠️ Ferramentas Ministeriais
-- Sistemas de gestão para igrejas e ministérios
-- Plataformas de educação teológica online
-- Recursos para ensino e discipulado
-
 ### 📚 Recursos Educacionais
-- Materiais de apoio para cursos teológicos
-- Bibliotecas digitais de conteúdo reformado
-- Ferramentas interativas de aprendizado
+
+[Em desenvolvimento] Aproveita que está aqui e venha decidir com a gente 😉 
 
 ## 🤝 Como Contribuir
 
