@@ -1,0 +1,203 @@
+name: 🚀 Release Automático
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Versão do release (ex: v1.2.0)'
+        required: true
+        default: 'v1.0.0'
+
+jobs:
+  create-release:
+    name: 📦 Criar Release
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout código
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        
+    - name: 🏷️ Obter informações da tag
+      id: tag_info
+      run: |
+        if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          echo "tag_name=${{ github.event.inputs.version }}" >> $GITHUB_OUTPUT
+          echo "is_prerelease=false" >> $GITHUB_OUTPUT
+        else
+          echo "tag_name=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+          if [[ ${GITHUB_REF#refs/tags/} =~ -[a-zA-Z] ]]; then
+            echo "is_prerelease=true" >> $GITHUB_OUTPUT
+          else
+            echo "is_prerelease=false" >> $GITHUB_OUTPUT
+          fi
+        fi
+        
+    - name: 📋 Gerar changelog
+      id: changelog
+      run: |
+        echo "Gerando changelog para ${{ steps.tag_info.outputs.tag_name }}..."
+        
+        # Obter commits desde o último tag
+        LAST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+        
+        if [ -n "$LAST_TAG" ]; then
+          COMMITS=$(git log --pretty=format:"- %s" $LAST_TAG..HEAD)
+        else
+          COMMITS=$(git log --pretty=format:"- %s")
+        fi
+        
+        # Criar changelog
+        cat > changelog.md << EOF
+        ## 📖 Novo Testamento Família 35 - ${{ steps.tag_info.outputs.tag_name }}
+        
+        ### 📚 Status dos Livros Bíblicos
+        
+        #### ✅ Completos
+        - **Mateus** - Tradução e revisão completas
+        - **Marcos** - Tradução e revisão completas  
+        - **Lucas** - Tradução e revisão completas
+        
+        #### 🔄 Em Desenvolvimento
+        - **João** - Em andamento
+        
+        ### 🔄 Mudanças nesta versão
+        
+        $COMMITS
+        
+        ### 📦 Como usar
+        
+        1. Baixe o arquivo \`F35.nt\` 
+        2. Abra o TheWord
+        3. Vá em **Ferramentas > Instalar novos módulos**
+        4. Selecione o arquivo baixado
+        
+        ### 🙏 Dedicação
+        
+        > *"Seca-se a erva, e cai a flor, porém a palavra de nosso Deus subsiste eternamente."*  
+        > **Isaías 40:8**
+        
+        Esta tradução é dedicada à glória de Deus e ao crescimento espiritual do Seu povo.
+        
+        ### 📖 Sobre a Tradução
+        
+        Baseada no trabalho do **Dr. Wilbur Norman Pickering** e extraída do livro "O Soberano Criador Já Falou, 3° Edição".
+        
+        **Família 35**: Representa um grupo de manuscritos gregos que preservam o texto original do Novo Testamento com alta fidelidade.
+        EOF
+        
+        # Escapar caracteres especiais para GitHub Actions
+        CHANGELOG_CONTENT=$(cat changelog.md)
+        echo "changelog<<EOF" >> $GITHUB_OUTPUT
+        echo "$CHANGELOG_CONTENT" >> $GITHUB_OUTPUT
+        echo "EOF" >> $GITHUB_OUTPUT
+        
+    - name: 📦 Preparar arquivos para release
+      run: |
+        echo "📦 Preparando arquivos para distribuição..."
+        
+        # Criar diretório de release
+        mkdir -p release
+        
+        # Copiar módulo principal
+        if [ -f "modules/bible/f35/F35.nt" ]; then
+          cp "modules/bible/f35/F35.nt" release/
+          echo "✅ F35.nt - Módulo principal copiado"
+        fi
+        
+        # Copiar módulos individuais
+        for book in Mt Mc Lc Jo; do
+          if [ -f "modules/bible/f35/${book}.nt" ]; then
+            cp "modules/bible/f35/${book}.nt" release/
+            echo "✅ ${book}.nt - Módulo individual copiado"
+          fi
+        done
+        
+        # Criar README para o release
+        cat > release/README.txt << 'EOF'
+        ========================================
+        THEWORD - NOVO TESTAMENTO FAMÍLIA 35
+        ========================================
+        
+        Instituto Reformado Santo Evangelho
+        https://irse.com.br
+        
+        INSTALAÇÃO:
+        -----------
+        1. Abra o software TheWord
+        2. Vá em "Ferramentas > Instalar novos módulos"
+        3. Selecione o arquivo F35.nt
+        4. Siga as instruções na tela
+        
+        ARQUIVOS INCLUÍDOS:
+        ------------------
+        - F35.nt     : Módulo principal (todos os livros)
+        - Mt.nt      : Evangelho de Mateus
+        - Mc.nt      : Evangelho de Marcos  
+        - Lc.nt      : Evangelho de Lucas
+        - Jo.nt      : Evangelho de João (se disponível)
+        
+        SOBRE A TRADUÇÃO:
+        ----------------
+        Tradução do Dr. Wilbur Norman Pickering
+        Baseada na Família 35 de manuscritos gregos
+        
+        "Seca-se a erva, e cai a flor, porém 
+         a palavra de nosso Deus subsiste eternamente."
+        - Isaías 40:8
+        
+        Para mais informações, visite:
+        https://github.com/Instituto-Reformado-Santo-Evangelho/theword
+        EOF
+        
+        # Listar arquivos preparados
+        echo "📋 Arquivos preparados para release:"
+        ls -la release/
+        
+    - name: 🚀 Criar release no GitHub
+      uses: actions/create-release@v1
+      id: create_release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ steps.tag_info.outputs.tag_name }}
+        release_name: 📖 TheWord F35 ${{ steps.tag_info.outputs.tag_name }}
+        body: ${{ steps.changelog.outputs.changelog }}
+        draft: false
+        prerelease: ${{ steps.tag_info.outputs.is_prerelease }}
+        
+    - name: 📎 Upload arquivos do release
+      run: |
+        echo "📎 Fazendo upload dos arquivos..."
+        
+        # Upload de cada arquivo na pasta release
+        for file in release/*; do
+          if [ -f "$file" ]; then
+            filename=$(basename "$file")
+            echo "Uploading: $filename"
+            
+            curl -X POST \
+              -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              -H "Content-Type: application/octet-stream" \
+              --data-binary @"$file" \
+              "https://uploads.github.com/repos/${{ github.repository }}/releases/${{ steps.create_release.outputs.id }}/assets?name=$filename"
+          fi
+        done
+        
+    - name: 🎉 Release concluído
+      run: |
+        echo "🎉 RELEASE ${{ steps.tag_info.outputs.tag_name }} CRIADO COM SUCESSO!"
+        echo "================================================"
+        echo ""
+        echo "📖 'Toda Escritura é inspirada por Deus e útil para o ensino,"
+        echo "    para a repreensão, para a correção, para a educação na"
+        echo "    justiça' - 2 Timóteo 3:16"
+        echo ""
+        echo "🙏 Que este trabalho seja uma bênção para o povo de Deus!"
+        echo ""
+        echo "🔗 Release disponível em:"
+        echo "   ${{ steps.create_release.outputs.html_url }}"
