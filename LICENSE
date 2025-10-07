@@ -1,41 +1,53 @@
-MIT License
+# Licenciamento dos Projetos IRSE
 
-Copyright (c) 2025 Instituto Reformado Santo Evangelho (IRSE)
+Os projetos do Instituto Reformado Santo Evangelho utilizam diferentes licenças conforme sua natureza e propósito.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## 📋 Por Projeto
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+### [Bereia Mobile](https://github.com/irse/bereia-mobile)
+**Licença**: GNU AGPL v3.0
+- Código aberto com copyleft forte
+- Uso comercial requer abertura do código
+- Ideal para apps que servem à comunidade
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+### [TheWord Modules](https://github.com/irse/theword)
+**Licença**: MIT + Nota sobre Conteúdo Bíblico
+- Código: MIT (uso livre)
+- Conteúdo bíblico: Baseado em trabalho do Dr. Wilbur Pickering
+- Uso educacional, ministerial e pessoal incentivado
 
-===================================
-NOTA ESPECIAL SOBRE CONTEÚDO BÍBLICO
-===================================
+### [TheWord Tools](https://github.com/irse/theword-tools)
+**Licença**: MIT
+- Ferramentas de código aberto
+- Uso livre para qualquer propósito
 
-O conteúdo bíblico incluído neste projeto (traduções, textos e módulos) 
-é baseado no trabalho do Dr. Wilbur Norman Pickering e extraído do livro 
-"O Soberano Criador Já Falou, 3° Edição".
+## 📖 Sobre Conteúdo Bíblico
 
-Este conteúdo é disponibilizado para:
+Traduções e textos bíblicos em nossos projetos são baseados em fontes acadêmicas respeitadas. O uso é incentivado para:
+
 - Estudo bíblico pessoal
-- Uso ministerial em igrejas
+- Ministério em igrejas
 - Educação teológica
 - Edificação do Corpo de Cristo
 
-O uso comercial do conteúdo bíblico deve ser avaliado conforme os direitos
-autorais originais da obra fonte.
+Para uso comercial de conteúdo bíblico específico, consulte os direitos autorais da obra fonte.
 
-"Seca-se a erva, e cai a flor, porém a palavra de nosso Deus subsiste eternamente."
-- Isaías 40:8
+## ⚖️ Filosofia de Licenciamento
+
+Escolhemos licenças que:
+- **Promovem acesso livre** ao estudo da Palavra
+- **Protegem o propósito ministerial** dos projetos
+- **Permitem contribuições** da comunidade
+- **Desencorajam exploração comercial** inadequada
+
+## 📞 Dúvidas sobre Licenciamento?
+
+Para questões específicas sobre uso e licenciamento:
+- Consulte o arquivo `LICENSE` de cada repositório
+- Entre em contato: contato@irse.org.br
+
+---
+
+> *"Seca-se a erva, e cai a flor, porém a palavra de nosso Deus subsiste eternamente"* - Isaías 40:8
+
+Copyright © 2024-2025 Instituto Reformado Santo Evangelho (IRSE)
