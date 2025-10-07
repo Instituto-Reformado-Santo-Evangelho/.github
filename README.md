@@ -1,97 +1,81 @@
 # Instituto Reformado Santo Evangelho
 
-## 🎯 Desenvolvendo Tecnologia para a Glória de Deus
+> *"Portanto, quer comais, quer bebais ou façais outra coisa qualquer, fazei tudo para a glória de Deus."* - 1 Coríntios 10:31
 
-> *"Portanto, quer comais, quer bebais ou façais outra coisa qualquer, fazei tudo para a glória de Deus."* - **1 Coríntios 10:31**
+Comunidade de desenvolvedores cristãos criando ferramentas tecnológicas para facilitar o estudo da Palavra de Deus.
 
-Bem-vindo à organização GitHub do **Instituto Reformado Santo Evangelho (IRSE)**! Somos uma comunidade de desenvolvedores cristãos dedicados a criar ferramentas tecnológicas que servem ao Reino de Deus e facilitam o estudo da Palavra de Deus.
+## 🚀 Projetos Ativos
 
----
+### 📱 [Bereia Mobile](https://github.com/Instituto-Reformado-Santo-Evangelho/bereia-mobile)
 
-## 🚀 **Nossos Projetos Ativos**
+Aplicativo Android para estudos bíblicos com compatibilidade total aos módulos theWord.
+
+- Kotlin + Jetpack Compose
+- Interface moderna e intuitiva
+- Funciona 100% offline
 
 ### 📖 [TheWord - Módulos Bíblicos](https://github.com/Instituto-Reformado-Santo-Evangelho/theword)
-Desenvolvemos módulos para o software TheWord com traduções bíblicas reformadas, começando com o **Novo Testamento segundo a Família 35** (Dr. Wilbur Norman Pickering).
 
-**Status atual:**
-- ✅ **Mateus** - Completo
-- ✅ **Marcos** - Completo  
-- ✅ **Lucas** - Completo
-- 🔄 **João** - Em desenvolvimento
+Módulos bíblicos para TheWord, incluindo Novo Testamento Família 35.
 
-### 🛠️ [TheWord Tools](https://github.com/Instituto-Reformado-Santo-Evangelho/theword-tools)
-Ferramentas de desenvolvimento para processamento e validação de textos bíblicos, separadas para facilitar contribuições técnicas.
+- Status: Mateus, Marcos, Lucas completos; João em desenvolvimento
 
----
+### 🛠️ [TheWord Tools](https://github.com/Instituto-Reformado-Santo-Evangelho theword-tools)
 
-## 🤝 **Como Contribuir**
+Ferramentas para processamento e validação de textos bíblicos.
+- Perl
+- Automatização de workflows
 
-### 💻 **Para Desenvolvedores**
-Junte-se à nossa missão! Trabalhamos com:
-- **Perl** - Processamento de textos bíblicos
-- **Python** - Automação e scripts
-- **JavaScript/TypeScript** - Aplicações web
-- **Outras tecnologias** conforme necessário
+## 🛡️ Nossos Valores
 
-### 🎓 **Extensão Acadêmica**
-Estudantes de TI podem contribuir como:
-- **Projeto de extensão** universitária
-- **Desenvolvimento de portfólio** com propósito
-- **Experiência prática** em projetos open source
-- **Contribuição para o Reino** através da tecnologia
+Fundamentados no maior mandamento:
 
-### 📝 **Para Não-Desenvolvedores**
-Também precisamos de:
-- **Revisores teológicos** para validação de conteúdo
-- **Testadores** de módulos e aplicações
-- **Tradutores** para outros idiomas
-- **Documentadores** para melhorar tutoriais
+> *"Amarás o Senhor, teu Deus, de todo o teu coração, de toda a tua alma e de todo o teu entendimento. Este é o grande e primeiro mandamento. O segundo, semelhante a este, é: Amarás o teu próximo como a ti mesmo."* - Mateus 22:37-39
 
----
+### Na Prática
 
-## 🛡️ **Nossos Valores Cristãos**
+- **Amor a Deus**: Excelência técnica como adoração e serviço ao Reino
+- **Amor ao próximo**: Respeito, humildade e colaboração fraterna
+- **Transparência**: Processos abertos e decisões documentadas
+- **Gratuidade**: Tecnologia livre para edificação do Corpo de Cristo
 
-Como cristãos, buscamos em tudo seguir os ensinamentos de Jesus Cristo. Esperamos que todos os participantes pratiquem:
+## 🤝 Como Contribuir
 
-### **🤝 Amor Fraternal**
-*"Nisto conhecerão todos que sois meus discípulos: se tiverdes amor uns aos outros."* - **João 13:35**
+### Para Desenvolvedores
+Trabalhamos com: Kotlin, Perl, JavaScript/TypeScript
 
-### **🕊️ Mansidão e Paciência**
-*"Sede todos de um mesmo sentimento, compassivos, cheios de amor fraternal, misericordiosos, humildes."* - **1 Pedro 3:8**
+### Para Estudantes
+Projetos ideais para extensão universitária e portfólio
 
-### **⚖️ Justiça e Verdade**
-*"Finalmente, irmãos, tudo o que é verdadeiro, tudo o que é respeitável, tudo o que é justo... seja isso o que ocupe o vosso pensamento."* - **Filipenses 4:8**
+### Para Não-Desenvolvedores
+- Revisão teológica
+- Testes de qualidade
+- Traduções
+- Documentação
 
-### **🙏 Humildade no Serviço**
-*"Nada façais por partidarismo ou vanglória, mas por humildade, considerando cada um os outros superiores a si mesmo."* - **Filipenses 2:3**
+## 🚀 Comece Agora
 
----
+1. ⭐ Star nos projetos
+2. 📖 Leia o CONTRIBUTING.md
+3. 🐛 Reporte bugs via Issues
+4. 🔧 Faça seu primeiro PR
 
-## 📊 **Estatísticas da Organização**
+**Primeira contribuição?** Procure por `good-first-issue`!
 
-![Repositórios](https://img.shields.io/badge/Repositórios-3-blue?style=for-the-badge)
-![Colaboradores](https://img.shields.io/badge/Colaboradores-Buscando-green?style=for-the-badge)
-![Licença](https://img.shields.io/badge/Licença-Open%20Source-orange?style=for-the-badge)
+## 🏛️ Governança
+
+- Código aberto (AGPL v3 / MIT)
+- Decisões documentadas publicamente
+- Modelo BDFL para direção clara
+- Consulte `GOVERNANCE.md` em cada projeto
+
+## 📞 Contato
+
+- 🌐 [irse.com.br](https://irse.com.br)
+- 💻 [@irse](https://github.com/irse)
 
 ---
 
-## 🎯 **Primeiros Passos**
+> *"Seca-se a erva, e cai a flor, porém a palavra de nosso Deus subsiste eternamente."* - Isaías 40:8
 
-1. **📋 Explore** nossos repositórios
-2. **📖 Leia** o CONTRIBUTING.md de cada projeto
-3. **🤝 Entre em contato** se tiver dúvidas
-4. **🔧 Faça** seu primeiro Pull Request
-
----
-
-## 📞 **Contato**
-
-- **🌐 Website**: [irse.com.br](https://irse.com.br)
-- **💻 GitHub**: [@Instituto-Reformado-Santo-Evangelho](https://github.com/Instituto-Reformado-Santo-Evangelho)
-- **📧 Contato**: Através do nosso website
-
----
-
-> *"Seca-se a erva, e cai a flor, porém a palavra de nosso Deus subsiste eternamente."* - **Isaías 40:8**
-
-**Venha fazer parte desta missão! Juntos, podemos usar a tecnologia para edificar o Corpo de Cristo. 🙌**
+**Junte-se a nós nesta missão de usar tecnologia para edificar o Corpo de Cristo! 🙌**
