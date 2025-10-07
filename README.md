@@ -1,12 +1,10 @@
 # Instituto Reformado Santo Evangelho
 
-> *"Portanto, quer comais, quer bebais ou façais outra coisa qualquer, fazei tudo para a glória de Deus."* - 1 Coríntios 10:31
-
 Comunidade de desenvolvedores cristãos criando ferramentas tecnológicas para facilitar o estudo da Palavra de Deus.
 
 ## 🚀 Projetos Ativos
 
-### 📱 [Bereia Mobile](https://github.com/Instituto-Reformado-Santo-Evangelho/bereia-mobile)
+### [Bereia Mobile](https://github.com/Instituto-Reformado-Santo-Evangelho/bereia-mobile)
 
 Aplicativo Android para estudos bíblicos com compatibilidade total aos módulos theWord.
 
@@ -14,25 +12,19 @@ Aplicativo Android para estudos bíblicos com compatibilidade total aos módulos
 - Interface moderna e intuitiva
 - Funciona 100% offline
 
-### 📖 [TheWord - Módulos Bíblicos](https://github.com/Instituto-Reformado-Santo-Evangelho/theword)
+### [TheWord - Módulos Bíblicos](https://github.com/Instituto-Reformado-Santo-Evangelho/theword)
 
 Módulos bíblicos para TheWord, incluindo Novo Testamento Família 35.
 
 - Status: Mateus, Marcos, Lucas completos; João em desenvolvimento
 
-### 🛠️ [TheWord Tools](https://github.com/Instituto-Reformado-Santo-Evangelho theword-tools)
+### [TheWord Tools](https://github.com/Instituto-Reformado-Santo-Evangelho/theword-tools)
 
 Ferramentas para processamento e validação de textos bíblicos.
 - Perl
 - Automatização de workflows
 
 ## 🛡️ Nossos Valores
-
-Fundamentados no maior mandamento:
-
-> *"Amarás o Senhor, teu Deus, de todo o teu coração, de toda a tua alma e de todo o teu entendimento. Este é o grande e primeiro mandamento. O segundo, semelhante a este, é: Amarás o teu próximo como a ti mesmo."* - Mateus 22:37-39
-
-### Na Prática
 
 - **Amor a Deus**: Excelência técnica como adoração e serviço ao Reino
 - **Amor ao próximo**: Respeito, humildade e colaboração fraterna
@@ -76,6 +68,6 @@ Projetos ideais para extensão universitária e portfólio
 
 ---
 
-> *"Seca-se a erva, e cai a flor, porém a palavra de nosso Deus subsiste eternamente."* - Isaías 40:8
+> *"Portanto, quer comais, quer bebais ou façais outra coisa qualquer, fazei tudo para a glória de Deus."* - 1 Coríntios 10:31
 
 **Junte-se a nós nesta missão de usar tecnologia para edificar o Corpo de Cristo! 🙌**
