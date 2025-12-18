@@ -1,6 +1,6 @@
 # Instituto Reformado Santo Evangelho
 
-Comunidade de desenvolvedores cristãos criando ferramentas tecnológicas para facilitar o estudo da Palavra de Deus.
+Ferramentas tecnológicas para facilitar o estudo da Palavra de Deus.
 
 ## 🚀 Projetos Ativos
 
