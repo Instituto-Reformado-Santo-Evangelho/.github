@@ -11,7 +11,6 @@ Aplicativo Android para leitura e estudo da Bíblia, compatível com módulos th
 - Kotlin + Jetpack Compose
 - Interface moderna e intuitiva
 - Funciona 100% offline
-- Plano amplo de acesso gratuito, mas também pode ser pago.
 
 ### [TheWord - Módulos Bíblicos](https://github.com/Instituto-Reformado-Santo-Evangelho/theword)
 
