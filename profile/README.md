@@ -6,11 +6,12 @@ Comunidade de desenvolvedores cristãos criando ferramentas tecnológicas para f
 
 ### [Bereia Mobile](https://github.com/Instituto-Reformado-Santo-Evangelho/bereia-mobile)
 
-Aplicativo Android para estudos bíblicos com compatibilidade total aos módulos theWord.
+Aplicativo Android para leitura e estudo da Bíblia, compatível com módulos theWord e vinculado a conteúdo autoral do IRSE, como ebooks e comentários.
 
 - Kotlin + Jetpack Compose
 - Interface moderna e intuitiva
 - Funciona 100% offline
+- Plano amplo de acesso gratuito, mas também pode ser pago.
 
 ### [TheWord - Módulos Bíblicos](https://github.com/Instituto-Reformado-Santo-Evangelho/theword)
 
@@ -35,9 +36,6 @@ Ferramentas para processamento e validação de textos bíblicos.
 
 ### Para Desenvolvedores
 Trabalhamos com: Kotlin, Perl, JavaScript/TypeScript
-
-### Para Estudantes
-Projetos ideais para extensão universitária e portfólio
 
 ### Para Não-Desenvolvedores
 - Revisão teológica
@@ -64,7 +62,7 @@ Projetos ideais para extensão universitária e portfólio
 ## 📞 Contato
 
 - 🌐 [irse.com.br](https://irse.com.br)
-- 💻 [@irse](https://github.com/irse)
+- 💻 [@irse]([https://github.com/irse](https://github.com/Instituto-Reformado-Santo-Evangelho))
 
 ---
 
